@@ -5,7 +5,6 @@ function NewPlantForm({addPlantToState}) {
   const [name, setName] = useState('')
   const [price, setPrice] = useState('')
   const [image, setImage] = useState('')
-  console.log(name, price, image)
 
   // Same As above using only one state and function 
   // const [form, setForm] = useState({})
@@ -21,6 +20,7 @@ function NewPlantForm({addPlantToState}) {
       price: price,
     }
     addPlantToState(newPlant)
+    //onChange click event, remember
   }
   return (
     <div className="new-plant-form">
